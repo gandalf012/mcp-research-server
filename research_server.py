@@ -198,4 +198,5 @@ def generate_search_prompt(topic: str, num_papers: int = 5) -> str:
 
 # to view the inspector: npx @modelcontextprotocol/inspector uv run research_server.py 
 if __name__ == "__main__":
-    mcp.run(transport="http", host="127.0.0.1", port=8081)
+    port = int(os.environ.get("PORT", 8081))
+    mcp.run(transport="http", host="0.0.0.0", port=port)
