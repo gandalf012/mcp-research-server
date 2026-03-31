@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from anthropic import Anthropic
 from fastmcp import Client
-from fastmcp.client.transports import StdioTransport
+from fastmcp.client.transports import StdioTransport, StreamableHttpTransport
 from contextlib import AsyncExitStack
 import json
 import asyncio
@@ -28,11 +28,14 @@ class MCP_ChatBot:
 
     async def connect_to_server(self, server_name, server_config):
         try:
-            transport = StdioTransport(
-                command=server_config["command"],
-                args=server_config.get("args", []),
-                env=server_config.get("env"),
-            )
+            if "url" in server_config:
+                transport = StreamableHttpTransport(url=server_config["url"])
+            else:
+                transport = StdioTransport(
+                    command=server_config["command"],
+                    args=server_config.get("args", []),
+                    env=server_config.get("env"),
+                )
 
             client = Client(transport, auto_initialize=False)
             client = await self.exit_stack.enter_async_context(client)

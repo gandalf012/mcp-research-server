@@ -16,8 +16,7 @@
         },
         
         "research": {
-            "command": "uv",
-            "args": ["run", "research_server.py"]
+            "url": "http://mcp-research-server-1.onrender.com/mcp"
         },
         
         "fetch": {
