@@ -1,0 +1,76 @@
+{
+  "2511.09690v1": {
+    "title": "Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages",
+    "authors": [
+      "Omnilingual ASR team",
+      "Gil Keren",
+      "Artyom Kozhevnikov",
+      "Yen Meng",
+      "Christophe Ropers",
+      "Matthew Setzler",
+      "Skyler Wang",
+      "Ife Adebara",
+      "Michael Auli",
+      "Can Balioglu",
+      "Kevin Chan",
+      "Chierh Cheng",
+      "Joe Chuang",
+      "Caley Droof",
+      "Mark Duppenthaler",
+      "Paul-Ambroise Duquenne",
+      "Alexander Erben",
+      "Cynthia Gao",
+      "Gabriel Mejia Gonzalez",
+      "Kehan Lyu",
+      "Sagar Miglani",
+      "Vineel Pratap",
+      "Kaushik Ram Sadagopan",
+      "Safiyyah Saleem",
+      "Arina Turkatenko",
+      "Albert Ventayol-Boada",
+      "Zheng-Xin Yong",
+      "Yu-An Chung",
+      "Jean Maillard",
+      "Rashel Moritz",
+      "Alexandre Mourachko",
+      "Mary Williamson",
+      "Shireen Yates"
+    ],
+    "summary": "Automatic speech recognition (ASR) has advanced in high-resource languages, but most of the world's 7,000+ languages remain unsupported, leaving thousands of long-tail languages behind. Expanding ASR coverage has been costly and limited by architectures that restrict language support, making extension inaccessible to most--all while entangled with ethical concerns when pursued without community collaboration. To transcend these limitations, we introduce Omnilingual ASR, the first large-scale ASR system designed for extensibility. Omnilingual ASR enables communities to introduce unserved languages with only a handful of data samples. It scales self-supervised pre-training to 7B parameters to learn robust speech representations and introduces an encoder-decoder architecture designed for zero-shot generalization, leveraging a LLM-inspired decoder. This capability is grounded in a massive and diverse training corpus; by combining breadth of coverage with linguistic variety, the model learns representations robust enough to adapt to unseen languages. Incorporating public resources with community-sourced recordings gathered through compensated local partnerships, Omnilingual ASR expands coverage to over 1,600 languages, the largest such effort to date--including over 500 never before served by ASR. Automatic evaluations show substantial gains over prior systems, especially in low-resource conditions, and strong generalization. We release Omnilingual ASR as a family of models, from 300M variants for low-power devices to 7B for maximum accuracy. We reflect on the ethical considerations shaping this design and conclude by discussing its societal impact. In particular, we highlight how open-sourcing models and tools can lower barriers for researchers and communities, inviting new forms of participation. Open-source artifacts are available at https://github.com/facebookresearch/omnilingual-asr.",
+    "pdf_url": "https://arxiv.org/pdf/2511.09690v1",
+    "published": "2025-11-12"
+  },
+  "2601.21337v2": {
+    "title": "Qwen3-ASR Technical Report",
+    "authors": [
+      "Xian Shi",
+      "Xiong Wang",
+      "Zhifang Guo",
+      "Yongqi Wang",
+      "Pei Zhang",
+      "Xinyu Zhang",
+      "Zishan Guo",
+      "Hongkun Hao",
+      "Yu Xi",
+      "Baosong Yang",
+      "Jin Xu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "summary": "In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-0.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio understanding ability of their foundation model Qwen3-Omni. We conduct comprehensive internal evaluation besides the open-sourced benchmarks as ASR models might differ little on open-sourced benchmark scores but exhibit significant quality differences in real-world scenarios. The experiments reveal that the 1.7B version achieves SOTA performance among open-sourced ASR models and is competitive with the strongest proprietary APIs while the 0.6B version offers the best accuracy-efficiency trade-off. Qwen3-ASR-0.6B can achieve an average TTFT as low as 92ms and transcribe 2000 seconds speech in 1 second at a concurrency of 128. Qwen3-ForcedAligner-0.6B is an LLM based NAR timestamp predictor that is able to align text-speech pairs in 11 languages. Timestamp accuracy experiments show that the proposed model outperforms the three strongest force alignment models and takes more advantages in efficiency and versatility. To further accelerate the community research of ASR and audio understanding, we release these models under the Apache 2.0 license.",
+    "pdf_url": "https://arxiv.org/pdf/2601.21337v2",
+    "published": "2026-01-29"
+  },
+  "2105.14779v2": {
+    "title": "Towards One Model to Rule All: Multilingual Strategy for Dialectal Code-Switching Arabic ASR",
+    "authors": [
+      "Shammur Absar Chowdhury",
+      "Amir Hussein",
+      "Ahmed Abdelali",
+      "Ahmed Ali"
+    ],
+    "summary": "With the advent of globalization, there is an increasing demand for multilingual automatic speech recognition (ASR), handling language and dialectal variation of spoken content. Recent studies show its efficacy over monolingual systems. In this study, we design a large multilingual end-to-end ASR using self-attention based conformer architecture. We trained the system using Arabic (Ar), English (En) and French (Fr) languages. We evaluate the system performance handling: (i) monolingual (Ar, En and Fr); (ii) multi-dialectal (Modern Standard Arabic, along with dialectal variation such as Egyptian and Moroccan); (iii) code-switching -- cross-lingual (Ar-En/Fr) and dialectal (MSA-Egyptian dialect) test cases, and compare with current state-of-the-art systems. Furthermore, we investigate the influence of different embedding/character representations including character vs word-piece; shared vs distinct input symbol per language. Our findings demonstrate the strength of such a model by outperforming state-of-the-art monolingual dialectal Arabic and code-switching Arabic ASR.",
+    "pdf_url": "https://arxiv.org/pdf/2105.14779v2",
+    "published": "2021-05-31"
+  }
+}

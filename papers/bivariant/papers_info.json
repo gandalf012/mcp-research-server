@@ -1,0 +1,48 @@
+{
+  "2005.10496v2": {
+    "title": "A bivariant Yoneda lemma and $(\\infty,2)$-categories of correspondences",
+    "authors": [
+      "Andrew W. Macpherson"
+    ],
+    "summary": "Everyone knows that if you have a bivariant homology theory satisfying a base change formula, you get an representation of a category of correspondences. For theories in which the covariant and contravariant transfer maps are in mutual adjunction, these data are actually equivalent. In other words, a 2-category of correspondences is the universal way to attach to a given 1-category a set of right adjoints that satisfy a base change formula.\n  Through a bivariant version of the Yoneda paradigm, I give a definition of correspondences in higher category theory and prove an extension theorem for bivariant functors. Moreover, conditioned on the existence of a 2-dimensional Grothendieck construction, I provide a proof of the aforementioned universal property. The methods, morally speaking, employ the `internal logic' of higher category theory: they make no explicit use of any particular model.",
+    "pdf_url": "https://arxiv.org/pdf/2005.10496v2",
+    "published": "2020-05-21"
+  },
+  "2306.14516v3": {
+    "title": "Co-operational bivariant theory",
+    "authors": [
+      "Shoji Yokura"
+    ],
+    "summary": "For a covariant functor W. Fulton and R. MacPherson defined \\emph{an operational bivariant theory} associated to this covariant functor. In this paper we will show that given a contravariant functor one can similarly construct a ``dual\" version of an operational bivariant theory, which we call a \\emph{co-operational} bivariant theory. If a given contravariant functor is the usual cohomology theory, then our co-operational bivariant group for the identity map consists of what are usually called ``cohomology operations\". In this sense, our co-operational bivariant theory consists of \\emph{``generalized\"} cohomology operations.",
+    "pdf_url": "https://arxiv.org/pdf/2306.14516v3",
+    "published": "2023-06-26"
+  },
+  "math/0606341v1": {
+    "title": "Bivariant Hopf cyclic cohomology",
+    "authors": [
+      "Atabey Kaygun",
+      "Masoud Khalkhali"
+    ],
+    "summary": "For module algebras and module coalgebras over an arbitrary bialgebra, we define two types of bivariant cyclic cohomology groups called bivariant Hopf cyclic cohomology and bivariant equivariant cyclic cohomology. These groups are defined through an extension of Connes' cyclic category $\u039b$. We show that, in the case of module coalgebras, bivariant Hopf cyclic cohomology specializes to Hopf cyclic cohomology of Connes and Moscovici and its dual version by fixing either one of the variables as the ground field. We also prove an appropriate version of Morita invariance for both of these theories.",
+    "pdf_url": "https://arxiv.org/pdf/math/0606341v1",
+    "published": "2006-06-14"
+  },
+  "2402.12963v1": {
+    "title": "Bivariant operadic categories",
+    "authors": [
+      "Martin Markl"
+    ],
+    "summary": "We develop a self-dual, bivariant extension of the concept of an operadic category, its associated operads and their algebras. Our new theory covers, besides all classical subjects, also generalized traces and bivariant versions of Kapranov's charades. It is, moreover, combinatorially rich and aesthetically pleasing.",
+    "pdf_url": "https://arxiv.org/pdf/2402.12963v1",
+    "published": "2024-02-20"
+  },
+  "math-ph/0202016v2": {
+    "title": "Retraction of the bivariant Chern character",
+    "authors": [
+      "Denis Perrot"
+    ],
+    "summary": "We show that the bivariant Chern character in entire cyclic cohomology constructed in a previous paper in terms of superconnections and heat kernel regularization, retracts on periodic cocycles under some finite summability conditions. The trick is a bivariant generalization of the Connes-Moscovici method for finitely summable K-cycles. This yields concrete formulas for the Chern character of p-summable quasihomomorphisms and invertible extensions, analogous to those of Nistor. The latter formulation is completely algebraic and based on the universal extensions of Cuntz and Zekri naturally appearing in the description of bivariant K-theory.",
+    "pdf_url": "https://arxiv.org/pdf/math-ph/0202016v2",
+    "published": "2002-02-12"
+  }
+}

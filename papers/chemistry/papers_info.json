@@ -1,0 +1,119 @@
+{
+  "1806.02690v2": {
+    "title": "Guest Editorial: Special Topic on Data-enabled Theoretical Chemistry",
+    "authors": [
+      "Matthias Rupp",
+      "O. Anatole von Lilienfeld",
+      "Kieron Burke"
+    ],
+    "summary": "A survey of the contributions to the Special Topic on Data-enabled Theoretical Chemistry is given, including a glossary of relevant machine learning terms.",
+    "pdf_url": "https://arxiv.org/pdf/1806.02690v2",
+    "published": "2018-06-07"
+  },
+  "2512.14989v1": {
+    "title": "Evaluating Large Language Models on Multimodal Chemistry Olympiad Exams",
+    "authors": [
+      "Yiming Cui",
+      "Xin Yao",
+      "Yuxuan Qin",
+      "Xin Li",
+      "Shijin Wang",
+      "Guoping Hu"
+    ],
+    "summary": "Multimodal scientific reasoning remains a significant challenge for large language models (LLMs), particularly in chemistry, where problem-solving relies on symbolic diagrams, molecular structures, and structured visual data. Here, we systematically evaluate 40 proprietary and open-source multimodal LLMs, including GPT-5, o3, Gemini-2.5-Pro, and Qwen2.5-VL, on a curated benchmark of Olympiad-style chemistry questions drawn from over two decades of U.S. National Chemistry Olympiad (USNCO) exams. These questions require integrated visual and textual reasoning across diverse modalities. We find that many models struggle with modality fusion, where in some cases, removing the image even improves accuracy, indicating misalignment in vision-language integration. Chain-of-Thought prompting consistently enhances both accuracy and visual grounding, as demonstrated through ablation studies and occlusion-based interpretability. Our results reveal critical limitations in the scientific reasoning abilities of current MLLMs, providing actionable strategies for developing more robust and interpretable multimodal systems in chemistry. This work provides a timely benchmark for measuring progress in domain-specific multimodal AI and underscores the need for further advances at the intersection of artificial intelligence and scientific reasoning.",
+    "pdf_url": "https://arxiv.org/pdf/2512.14989v1",
+    "published": "2025-12-17"
+  },
+  "1412.6636v2": {
+    "title": "Coherent view of crystal chemistry and ab initio analyses of Pb(II) and Bi(III) Lone Pair in square planar coordination",
+    "authors": [
+      "Samir F. Matar",
+      "Jean Galy"
+    ],
+    "summary": "The stereochemistry of 6s2 (E) lone pair of divalent Pb and trivalent Bi (PbII and BiIII designated by M*) in structurally related PbO, PbFX (X= Cl, Br, I), BiOX (X= F, Cl, Br, I) and Bi2NbO5F is rationalized. The lone pair LP presence determined by its sphere of influence E, equal to those of oxygen or fluorine anions, was settled by its center then giving M*-E directions and distances. Detailed description of structural features of both elements in the title compounds characterized by [PbEO]n and [BiEO]n layers allowed to show the evolution of M*-E distance versus the changes with the square pyramidal SP coordination polyhedra. All are different, in red PbO one finds {PbEO4E4} square antiprism, a {[Bi.E]O4X4Xapical} monocapped square antiprism in PbFX and BiOX and {BiEO4F4}square antiprism in Bi2NbO5F. To analyze the crystal chemistry results, the electronic structures of these compounds were calculated within density functional theory DFT. Real space analyses of electron localization illustrate a full volume development of the lone pair on PbII within {PbEO4E4} in PbOE, {PbEF4X4} in PbFXE and Bi(III) within {BiEO4X4} square antiprisms, contrary to Bi(III) within {[Bi.E]O4F4Fapical} monocapped square antiprism. Larger hardness (larger bulk modules B0) and band gap characterize BiOF versus PbO due to the presence of F which brings antibonding Bi-F interactions oppositely to mainly bonding Bi-O. In PbFX and BiOX series there is a systematic decrease of B0 with the increasing volume following the nature and size of X which is decreasingly electronegative and increasingly large. The electronic densities of states mirror these effects through the relative energy position and relative electronegativities of F/X and O/X leading to decrease the band gap.",
+    "pdf_url": "https://arxiv.org/pdf/1412.6636v2",
+    "published": "2014-12-20"
+  },
+  "1302.1059v1": {
+    "title": "Crystal Structure and Chemistry of Topological Insulators",
+    "authors": [
+      "R. J. Cava",
+      "Huiwen Ji",
+      "M. K. Fuccillo",
+      "Q. D. Gibson",
+      "Y. S. Hor"
+    ],
+    "summary": "Topological surface states, a new kind of electronic state of matter, have recently been observed on the cleaved surfaces of crystals of a handful of small band gap semiconductors. The underlying chemical factors that enable these states are crystal symmetry, the presence of strong spin orbit coupling, and an inversion of the energies of the bulk electronic states that normally contribute to the valence and conduction bands. The goals of this review are to briefly introduce the physics of topological insulators to a chemical audience and to describe the chemistry, defect chemistry, and crystal structures of the compounds in this emergent field.",
+    "pdf_url": "https://arxiv.org/pdf/1302.1059v1",
+    "published": "2013-02-05"
+  },
+  "2304.05272v1": {
+    "title": "Three-body recombination in physical chemistry",
+    "authors": [
+      "Marjan Mirahmadi",
+      "Jes\u00fas P\u00e9rez-R\u00edos"
+    ],
+    "summary": "Three-body recombination, or ternary association, is a termolecular reaction in which three particles collide, forming a bound state between two, whereas the third escapes freely. Three-body recombination reactions play a significant role in many systems relevant to physics and chemistry. In particular, they are relevant in cold and ultracold chemistry, quantum gases, astrochemistry, atmospheric physics, physical chemistry, and plasma physics. As a result, three-body recombination has been the subject of extensive work during the last 50 years, although primarily from an experimental perspective. Indeed, a general theory for three-body recombination remains elusive despite the available experimental information. Our group recently developed a direct approach based on classical trajectory calculations in hyperspherical coordinates for three-body recombination to amend this situation, leading to a first principle explanation of ion-atom-atom and atom-atom-atom three-body recombination processes. This review aims to summarize our findings on three-body recombination reactions and identify the remaining challenges in the field.",
+    "pdf_url": "https://arxiv.org/pdf/2304.05272v1",
+    "published": "2023-04-11"
+  },
+  "2103.09608v1": {
+    "title": "Aromatics and Cyclic Molecules in Molecular Clouds: A New Dimension of Interstellar Organic Chemistry",
+    "authors": [
+      "Michael C. McCarthy",
+      "Brett A. McGuire"
+    ],
+    "summary": "Astrochemistry lies at the nexus of astronomy, chemistry, and molecular physics. On the basis of precise laboratory data, a rich collection of more than 200 familiar and exotic molecules have been identified in the interstellar medium, the vast majority by their unique rotational fingerprint. Despite this large body of work, there is scant evidence in the radio band for the basic building blocks of chemistry on earth -- five and six-membered rings -- despite long standing and sustained efforts during the past 50 years. In contrast, a peculiar structural motif, highly unsaturated carbon in a chain-like arrangement, is instead quite common in space. The recent astronomical detection of cyanobenzene, the simplest aromatic nitrile, in the dark molecular cloud TMC-1, and soon afterwards in additional pre-stellar, and possibly protostellar sources, establishes that aromatic chemistry is likely widespread in the earliest stages of star formation. The subsequent discovery of cyanocyclopentadienes and even cyanonapthlenes in TMC-1 provides further evidence that organic molecules of considerable complexity are readily synthesized in regions with high visual extinction but where the low temperature and pressure are remarkably low. This review focuses on laboratory efforts now underway to understand the rich transition region between linear and planar carbon structures using microwave spectroscopy. We present key features, advantages, and disadvantages of current detection methods, a discussion of the types of molecules found in space and in the laboratory, and approaches under development to identify entirely new species in complex mixtures. Studies focusing on the cyanation of hydrocarbons and the formation of benzene from acyclic precursors are highlighted, as is the role that isotopic studies might play in elucidating the chemical pathways to ring formation.",
+    "pdf_url": "https://arxiv.org/pdf/2103.09608v1",
+    "published": "2021-03-17"
+  },
+  "2411.07228v3": {
+    "title": "ChemToolAgent: The Impact of Tools on Language Agents for Chemistry Problem Solving",
+    "authors": [
+      "Botao Yu",
+      "Frazier N. Baker",
+      "Ziru Chen",
+      "Garrett Herb",
+      "Boyu Gou",
+      "Daniel Adu-Ampratwum",
+      "Xia Ning",
+      "Huan Sun"
+    ],
+    "summary": "To enhance large language models (LLMs) for chemistry problem solving, several LLM-based agents augmented with tools have been proposed, such as ChemCrow and Coscientist. However, their evaluations are narrow in scope, leaving a large gap in understanding the benefits of tools across diverse chemistry tasks. To bridge this gap, we develop ChemToolAgent, an enhanced chemistry agent over ChemCrow, and conduct a comprehensive evaluation of its performance on both specialized chemistry tasks and general chemistry questions. Surprisingly, ChemToolAgent does not consistently outperform its base LLMs without tools. Our error analysis with a chemistry expert suggests that: For specialized chemistry tasks, such as synthesis prediction, we should augment agents with specialized tools; however, for general chemistry questions like those in exams, agents' ability to reason correctly with chemistry knowledge matters more, and tool augmentation does not always help.",
+    "pdf_url": "https://arxiv.org/pdf/2411.07228v3",
+    "published": "2024-11-11"
+  },
+  "astro-ph/0212058v1": {
+    "title": "Carbon Chemistry in interstellar clouds",
+    "authors": [
+      "Maryvonne Gerin",
+      "David Fosse",
+      "Evelyne Roueff"
+    ],
+    "summary": "We discuss new developments of interstellar chemistry, with particular emphasis on the carbon chemistry. We confirm that carbon chains and cycles are ubiquitous in the ISM and closely chemically related to ea ch other, and to carbon. Investigation of the carbon budget in shielded and UV illuminated gas shows that the inventory of interstellar molecules is not complete and more complex molecules with 4 or more carbon atoms must be present. Finally we discuss the consequences for the evolution of clouds and conclude that the ubiquitous presence of carbon chains and cycles is not a necessary consequence of a very young age for interstellar clouds.",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0212058v1",
+    "published": "2002-12-03"
+  },
+  "2107.01088v1": {
+    "title": "Bimolecular chemistry in the ultracold regime",
+    "authors": [
+      "Yu Liu",
+      "Kang-Kuen Ni"
+    ],
+    "summary": "Advances in atomic, molecular, and optical (AMO) physics techniques allowed the cooling of simple molecules down to the ultracold regime ($\\lesssim$ 1 mK), and opened the opportunities to study chemical reactions with unprecedented levels of control. This review covers recent developments in studying bimolecular chemistry at ultralow temperatures. We begin with a brief overview of methods for producing, manipulating, and detecting ultracold molecules. We then survey experimental works that exploit the controllability of ultracold molecules to probe and modify their long-range interactions. Further combining the use of physical chemistry techniques, such as mass spectrometry and ion imaging, significantly improved the detection of ultracold reactions and enabled explorations of their dynamics in the short-range. We discuss a series of studies on the reaction KRb + KRb $\\rightarrow$ K$_2$ + Rb$_2$ initiated below 1 $\u03bc$K, including the direct observation of a long-lived complex, the demonstration of product rotational state control via conserved nuclear spins, and a test of the statistical model using the complete quantum state distribution of the products.",
+    "pdf_url": "https://arxiv.org/pdf/2107.01088v1",
+    "published": "2021-06-27"
+  },
+  "2305.06668v1": {
+    "title": "A robust, open-source implementation of the locally optimal block preconditioned conjugate gradient for large eigenvalue problems in quantum chemistry",
+    "authors": [
+      "Tommaso Nottoli",
+      "Ivan Giann\u00ec",
+      "Antoine Levitt",
+      "Filippo Lipparini"
+    ],
+    "summary": "We present two open-source implementations of the Locally Optimal Block Preconditioned Conjugate Gradient (LOBPCG) algorithm to find a few eigenvalues and eigenvectors of large, possibly sparse matrices. We then test LOBPCG for various quantum chemistry problems, encompassing medium to large, dense to sparse, wellbehaved to ill-conditioned ones, where the standard method typically used is Davidson's diagonalization. Numerical tests show that, while Davidson's method remains the best choice for most applications in quantum chemistry, LOBPCG represents a competitive alternative, especially when memory is an issue, and can even outperform Davidson for ill-conditioned, non diagonally dominant problems.",
+    "pdf_url": "https://arxiv.org/pdf/2305.06668v1",
+    "published": "2023-05-11"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "2110.07840v1": {
+    "title": "ESPnet2-TTS: Extending the Edge of TTS Research",
+    "authors": [
+      "Tomoki Hayashi",
+      "Ryuichi Yamamoto",
+      "Takenori Yoshimura",
+      "Peter Wu",
+      "Jiatong Shi",
+      "Takaaki Saeki",
+      "Yooncheol Ju",
+      "Yusuke Yasuda",
+      "Shinnosuke Takamichi",
+      "Shinji Watanabe"
+    ],
+    "summary": "This paper describes ESPnet2-TTS, an end-to-end text-to-speech (E2E-TTS) toolkit. ESPnet2-TTS extends our earlier version, ESPnet-TTS, by adding many new features, including: on-the-fly flexible pre-processing, joint training with neural vocoders, and state-of-the-art TTS models with extensions like full-band E2E text-to-waveform modeling, which simplify the training pipeline and further enhance TTS performance. The unified design of our recipes enables users to quickly reproduce state-of-the-art E2E-TTS results. We also provide many pre-trained models in a unified Python interface for inference, offering a quick means for users to generate baseline samples and build demos. Experimental evaluations with English and Japanese corpora demonstrate that our provided models synthesize utterances comparable to ground-truth ones, achieving state-of-the-art TTS performance. The toolkit is available online at https://github.com/espnet/espnet.",
+    "pdf_url": "https://arxiv.org/pdf/2110.07840v1",
+    "published": "2021-10-15"
+  },
+  "2601.15621v1": {
+    "title": "Qwen3-TTS Technical Report",
+    "authors": [
+      "Hangrui Hu",
+      "Xinfa Zhu",
+      "Ting He",
+      "Dake Guo",
+      "Bin Zhang",
+      "Xiong Wang",
+      "Zhifang Guo",
+      "Ziyue Jiang",
+      "Hongkun Hao",
+      "Zishan Guo",
+      "Xinyu Zhang",
+      "Pei Zhang",
+      "Baosong Yang",
+      "Jin Xu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "summary": "In this report, we present the Qwen3-TTS series, a family of advanced multilingual, controllable, robust, and streaming text-to-speech models. Qwen3-TTS supports state-of-the-art 3-second voice cloning and description-based control, allowing both the creation of entirely novel voices and fine-grained manipulation over the output speech. Trained on over 5 million hours of speech data spanning 10 languages, Qwen3-TTS adopts a dual-track LM architecture for real-time synthesis, coupled with two speech tokenizers: 1) Qwen-TTS-Tokenizer-25Hz is a single-codebook codec emphasizing semantic content, which offers seamlessly integration with Qwen-Audio and enables streaming waveform reconstruction via a block-wise DiT. 2) Qwen-TTS-Tokenizer-12Hz achieves extreme bitrate reduction and ultra-low-latency streaming, enabling immediate first-packet emission ($97\\,\\mathrm{ms}$) through its 12.5 Hz, 16-layer multi-codebook design and a lightweight causal ConvNet. Extensive experiments indicate state-of-the-art performance across diverse objective and subjective benchmark (e.g., TTS multilingual test set, InstructTTSEval, and our long speech test set). To facilitate community research and development, we release both tokenizers and models under the Apache 2.0 license.",
+    "pdf_url": "https://arxiv.org/pdf/2601.15621v1",
+    "published": "2026-01-22"
+  },
+  "1910.10909v2": {
+    "title": "ESPnet-TTS: Unified, Reproducible, and Integratable Open Source End-to-End Text-to-Speech Toolkit",
+    "authors": [
+      "Tomoki Hayashi",
+      "Ryuichi Yamamoto",
+      "Katsuki Inoue",
+      "Takenori Yoshimura",
+      "Shinji Watanabe",
+      "Tomoki Toda",
+      "Kazuya Takeda",
+      "Yu Zhang",
+      "Xu Tan"
+    ],
+    "summary": "This paper introduces a new end-to-end text-to-speech (E2E-TTS) toolkit named ESPnet-TTS, which is an extension of the open-source speech processing toolkit ESPnet. The toolkit supports state-of-the-art E2E-TTS models, including Tacotron~2, Transformer TTS, and FastSpeech, and also provides recipes inspired by the Kaldi automatic speech recognition (ASR) toolkit. The recipes are based on the design unified with the ESPnet ASR recipe, providing high reproducibility. The toolkit also provides pre-trained models and samples of all of the recipes so that users can use it as a baseline. Furthermore, the unified design enables the integration of ASR functions with TTS, e.g., ASR-based objective evaluation and semi-supervised learning with both ASR and TTS models. This paper describes the design of the toolkit and experimental evaluation in comparison with other toolkits. The experimental results show that our models can achieve state-of-the-art performance comparable to the other latest toolkits, resulting in a mean opinion score (MOS) of 4.25 on the LJSpeech dataset. The toolkit is publicly available at https://github.com/espnet/espnet.",
+    "pdf_url": "https://arxiv.org/pdf/1910.10909v2",
+    "published": "2019-10-24"
+  }
+}

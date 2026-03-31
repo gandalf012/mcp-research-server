@@ -1,0 +1,95 @@
+================================================================================
+                        RESEARCH FINDINGS: RECURSIVE LANGUAGE MODELS
+================================================================================
+
+SOURCE
+------
+Website visited: https://www.deeplearning.ai
+Interesting term identified: "Recursive Language Models"
+  - Spotted in the headline: "Nvidia's Open Salvo, OpenAI's Amazon Deal, Grok Cuts
+    Video Prices, Recursive Language Models" (The Batch, Mar 27, 2026)
+
+Recursive Language Models represent an emerging direction in AI where models reuse
+or loop their own parameters/representations to refine outputs, rather than simply
+scaling up model size. This is relevant to current discussions around efficiency,
+compute adaptability, and multimodal AI.
+
+================================================================================
+PAPER 1
+================================================================================
+Title   : Looping Back to Move Forward: Recursive Transformers for Efficient and
+          Flexible Large Multimodal Models
+Authors : Ruihan Xu, Yuting Gao, Lan Wang, Jianing Li, Weihao Chen, Qingpei Guo,
+          Ming Yang, Shiliang Zhang
+Published: 2026-02-09
+PDF     : https://arxiv.org/pdf/2602.09080v1
+
+Summary:
+Large Multimodal Models (LMMs) have achieved remarkable success in vision-language
+tasks, yet their vast parameter counts are often underutilized during both training
+and inference. This paper introduces RecursiveVLM, a recursive Transformer
+architecture that reuses model parameters through recursive refinement to extract
+stronger multimodal representations — without increasing model size.
+
+Key Innovations:
+  1. Recursive Connector – Aligns features across recursion steps by fusing
+     intermediate-layer hidden states and applying modality-specific projections,
+     respecting the distinct statistical structures of vision and language tokens.
+  2. Monotonic Recursion Loss – Supervises every recursion step and guarantees
+     that performance improves monotonically with recursion depth.
+
+This design makes recursion an on-demand refinement mechanism: it delivers strong
+results with few loops on resource-constrained devices and progressively improves
+outputs when more compute is available. Experiments show consistent gains of +3%
+over standard Transformers and +7% over vanilla recursive baselines.
+
+================================================================================
+PAPER 2
+================================================================================
+Title   : Hierarchical Character Embeddings: Learning Phonological and Semantic
+          Representations in Languages of Logographic Origin using Recursive
+          Neural Networks
+Authors : Minh Nguyen, Gia H. Ngo, Nancy F. Chen
+Published: 2019-12-20
+PDF     : https://arxiv.org/pdf/1912.09913v2
+
+Summary:
+This paper explores recursive neural networks applied to logographic languages
+(e.g., Chinese characters), whose hierarchical sub-unit structures encode both
+phonological and semantic information — mirroring how native speakers learn to
+read. The authors propose building hierarchical character embeddings from these
+recursive structures using treeLSTM, a type of recursive neural network.
+
+Key Ideas:
+  - Logographs have recursive structures (hierarchies of sub-units) that carry
+    meaningful linguistic information.
+  - Using treeLSTM imposes a prior on the embedding process, forcing the network
+    to read sub-units in the order dictated by the logograph's structure.
+  - Two tasks evaluated: (1) predicting Cantonese pronunciation from logographic
+    structures, and (2) language modeling.
+
+Results show that hierarchical embeddings outperform baseline approaches and are
+more robust — particularly on complex logographs — being less sensitive to
+distractors.
+
+================================================================================
+OVERALL INSIGHTS
+================================================================================
+Both papers highlight the power of recursion in language and multimodal models,
+albeit from very different angles:
+
+  - Paper 1 (2026) focuses on computational efficiency: by looping (reusing)
+    parameters in large multimodal transformers, models can scale their reasoning
+    depth dynamically based on available resources — a timely topic as the AI
+    field grapples with inference costs.
+
+  - Paper 2 (2019) demonstrates that recursive structures are not just a modern
+    trick — they are deeply embedded in how human language itself is organized.
+    Modeling the recursive nature of Chinese characters with treeLSTM yields
+    richer, more robust representations.
+
+Together, these papers underscore that recursion — whether in model architecture
+or linguistic structure — is a fundamental and powerful principle in building
+intelligent language systems.
+
+================================================================================

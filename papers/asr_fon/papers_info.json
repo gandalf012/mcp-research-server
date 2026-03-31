@@ -1,0 +1,78 @@
+{
+  "2511.09690v1": {
+    "title": "Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages",
+    "authors": [
+      "Omnilingual ASR team",
+      "Gil Keren",
+      "Artyom Kozhevnikov",
+      "Yen Meng",
+      "Christophe Ropers",
+      "Matthew Setzler",
+      "Skyler Wang",
+      "Ife Adebara",
+      "Michael Auli",
+      "Can Balioglu",
+      "Kevin Chan",
+      "Chierh Cheng",
+      "Joe Chuang",
+      "Caley Droof",
+      "Mark Duppenthaler",
+      "Paul-Ambroise Duquenne",
+      "Alexander Erben",
+      "Cynthia Gao",
+      "Gabriel Mejia Gonzalez",
+      "Kehan Lyu",
+      "Sagar Miglani",
+      "Vineel Pratap",
+      "Kaushik Ram Sadagopan",
+      "Safiyyah Saleem",
+      "Arina Turkatenko",
+      "Albert Ventayol-Boada",
+      "Zheng-Xin Yong",
+      "Yu-An Chung",
+      "Jean Maillard",
+      "Rashel Moritz",
+      "Alexandre Mourachko",
+      "Mary Williamson",
+      "Shireen Yates"
+    ],
+    "summary": "Automatic speech recognition (ASR) has advanced in high-resource languages, but most of the world's 7,000+ languages remain unsupported, leaving thousands of long-tail languages behind. Expanding ASR coverage has been costly and limited by architectures that restrict language support, making extension inaccessible to most--all while entangled with ethical concerns when pursued without community collaboration. To transcend these limitations, we introduce Omnilingual ASR, the first large-scale ASR system designed for extensibility. Omnilingual ASR enables communities to introduce unserved languages with only a handful of data samples. It scales self-supervised pre-training to 7B parameters to learn robust speech representations and introduces an encoder-decoder architecture designed for zero-shot generalization, leveraging a LLM-inspired decoder. This capability is grounded in a massive and diverse training corpus; by combining breadth of coverage with linguistic variety, the model learns representations robust enough to adapt to unseen languages. Incorporating public resources with community-sourced recordings gathered through compensated local partnerships, Omnilingual ASR expands coverage to over 1,600 languages, the largest such effort to date--including over 500 never before served by ASR. Automatic evaluations show substantial gains over prior systems, especially in low-resource conditions, and strong generalization. We release Omnilingual ASR as a family of models, from 300M variants for low-power devices to 7B for maximum accuracy. We reflect on the ethical considerations shaping this design and conclude by discussing its societal impact. In particular, we highlight how open-sourcing models and tools can lower barriers for researchers and communities, inviting new forms of participation. Open-source artifacts are available at https://github.com/facebookresearch/omnilingual-asr.",
+    "pdf_url": "https://arxiv.org/pdf/2511.09690v1",
+    "published": "2025-11-12"
+  },
+  "2601.00890v1": {
+    "title": "Index-ASR Technical Report",
+    "authors": [
+      "Zheshu Song",
+      "Lu Wang",
+      "Wei Deng",
+      "Zhuo Yang",
+      "Yong Wu",
+      "Bin Xia"
+    ],
+    "summary": "Automatic speech recognition (ASR) has witnessed remarkable progress in recent years, largely driven by the emergence of LLM-based ASR paradigm. Despite their strong performance on a variety of open-source benchmarks, existing LLM-based ASR systems still suffer from two critical limitations. First, they are prone to hallucination errors, often generating excessively long and repetitive outputs that are not well grounded in the acoustic input. Second, they provide limited support for flexible and fine-grained contextual customization. To address these challenges, we propose Index-ASR, a large-scale LLM-based ASR system designed to simultaneously enhance robustness and support customizable hotword recognition. The core idea of Index-ASR lies in the integration of LLM and large-scale training data enriched with background noise and contextual information. Experimental results show that our Index-ASR achieves strong performance on both open-source benchmarks and in-house test sets, highlighting its robustness and practicality for real-world ASR applications.",
+    "pdf_url": "https://arxiv.org/pdf/2601.00890v1",
+    "published": "2025-12-31"
+  },
+  "2601.21337v2": {
+    "title": "Qwen3-ASR Technical Report",
+    "authors": [
+      "Xian Shi",
+      "Xiong Wang",
+      "Zhifang Guo",
+      "Yongqi Wang",
+      "Pei Zhang",
+      "Xinyu Zhang",
+      "Zishan Guo",
+      "Hongkun Hao",
+      "Yu Xi",
+      "Baosong Yang",
+      "Jin Xu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "summary": "In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-0.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio understanding ability of their foundation model Qwen3-Omni. We conduct comprehensive internal evaluation besides the open-sourced benchmarks as ASR models might differ little on open-sourced benchmark scores but exhibit significant quality differences in real-world scenarios. The experiments reveal that the 1.7B version achieves SOTA performance among open-sourced ASR models and is competitive with the strongest proprietary APIs while the 0.6B version offers the best accuracy-efficiency trade-off. Qwen3-ASR-0.6B can achieve an average TTFT as low as 92ms and transcribe 2000 seconds speech in 1 second at a concurrency of 128. Qwen3-ForcedAligner-0.6B is an LLM based NAR timestamp predictor that is able to align text-speech pairs in 11 languages. Timestamp accuracy experiments show that the proposed model outperforms the three strongest force alignment models and takes more advantages in efficiency and versatility. To further accelerate the community research of ASR and audio understanding, we release these models under the Apache 2.0 license.",
+    "pdf_url": "https://arxiv.org/pdf/2601.21337v2",
+    "published": "2026-01-29"
+  }
+}

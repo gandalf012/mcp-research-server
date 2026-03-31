@@ -1,0 +1,66 @@
+{
+  "2602.09080v1": {
+    "title": "Looping Back to Move Forward: Recursive Transformers for Efficient and Flexible Large Multimodal Models",
+    "authors": [
+      "Ruihan Xu",
+      "Yuting Gao",
+      "Lan Wang",
+      "Jianing Li",
+      "Weihao Chen",
+      "Qingpei Guo",
+      "Ming Yang",
+      "Shiliang Zhang"
+    ],
+    "summary": "Large Multimodal Models (LMMs) have achieved remarkable success in vision-language tasks, yet their vast parameter counts are often underutilized during both training and inference. In this work, we embrace the idea of looping back to move forward: reusing model parameters through recursive refinement to extract stronger multimodal representations without increasing model size. We propose RecursiveVLM, a recursive Transformer architecture tailored for LMMs. Two key innovations enable effective looping: (i) a Recursive Connector that aligns features across recursion steps by fusing intermediate-layer hidden states and applying modality-specific projections, respecting the distinct statistical structures of vision and language tokens; (ii) a Monotonic Recursion Loss that supervises every step and guarantees performance improves monotonically with recursion depth. This design transforms recursion into an on-demand refinement mechanism: delivering strong results with few loops on resource-constrained devices and progressively improving outputs when more computation resources are available. Experiments show consistent gains of +3% over standard Transformers and +7% over vanilla recursive baselines, demonstrating that strategic looping is a powerful path toward efficient, deployment-adaptive LMMs.",
+    "pdf_url": "https://arxiv.org/pdf/2602.09080v1",
+    "published": "2026-02-09"
+  },
+  "1407.6255v1": {
+    "title": "Adaptive Fault Diagnosis using Self-Referential Reasoning",
+    "authors": [
+      "Robert Cowen"
+    ],
+    "summary": "The problem is to determine which processors are reliable in a remote location by asking \"Yes or No\" questions. The processors are of three types: those that always tell the truth, those that always lie, and those the sometimes tell the truth and sometimes lie. Using self-referential reasoning, along with earlier techniques, we can regard both the truth-tellers and liars as reliable and thus the tackle situations when fewer than half the processors are truth-tellers.",
+    "pdf_url": "https://arxiv.org/pdf/1407.6255v1",
+    "published": "2014-07-17"
+  },
+  "2109.08668v2": {
+    "title": "Primer: Searching for Efficient Transformers for Language Modeling",
+    "authors": [
+      "David R. So",
+      "Wojciech Ma\u0144ke",
+      "Hanxiao Liu",
+      "Zihang Dai",
+      "Noam Shazeer",
+      "Quoc V. Le"
+    ],
+    "summary": "Large Transformer models have been central to recent advances in natural language processing. The training and inference costs of these models, however, have grown rapidly and become prohibitively expensive. Here we aim to reduce the costs of Transformers by searching for a more efficient variant. Compared to previous approaches, our search is performed at a lower level, over the primitives that define a Transformer TensorFlow program. We identify an architecture, named Primer, that has a smaller training cost than the original Transformer and other variants for auto-regressive language modeling. Primer's improvements can be mostly attributed to two simple modifications: squaring ReLU activations and adding a depthwise convolution layer after each Q, K, and V projection in self-attention.\n  Experiments show Primer's gains over Transformer increase as compute scale grows and follow a power law with respect to quality at optimal model sizes. We also verify empirically that Primer can be dropped into different codebases to significantly speed up training without additional tuning. For example, at a 500M parameter size, Primer improves the original T5 architecture on C4 auto-regressive language modeling, reducing the training cost by 4X. Furthermore, the reduced training cost means Primer needs much less compute to reach a target one-shot performance. For instance, in a 1.9B parameter configuration similar to GPT-3 XL, Primer uses 1/3 of the training compute to achieve the same one-shot performance as Transformer. We open source our models and several comparisons in T5 to help with reproducibility.",
+    "pdf_url": "https://arxiv.org/pdf/2109.08668v2",
+    "published": "2021-09-17"
+  },
+  "1912.09913v2": {
+    "title": "Hierarchical Character Embeddings: Learning Phonological and Semantic Representations in Languages of Logographic Origin using Recursive Neural Networks",
+    "authors": [
+      "Minh Nguyen",
+      "Gia H. Ngo",
+      "Nancy F. Chen"
+    ],
+    "summary": "Logographs (Chinese characters) have recursive structures (i.e. hierarchies of sub-units in logographs) that contain phonological and semantic information, as developmental psychology literature suggests that native speakers leverage on the structures to learn how to read. Exploiting these structures could potentially lead to better embeddings that can benefit many downstream tasks. We propose building hierarchical logograph (character) embeddings from logograph recursive structures using treeLSTM, a recursive neural network. Using recursive neural network imposes a prior on the mapping from logographs to embeddings since the network must read in the sub-units in logographs according to the order specified by the recursive structures. Based on human behavior in language learning and reading, we hypothesize that modeling logographs' structures using recursive neural network should be beneficial. To verify this claim, we consider two tasks (1) predicting logographs' Cantonese pronunciation from logographic structures and (2) language modeling. Empirical results show that the proposed hierarchical embeddings outperform baseline approaches. Diagnostic analysis suggests that hierarchical embeddings constructed using treeLSTM is less sensitive to distractors, thus is more robust, especially on complex logographs.",
+    "pdf_url": "https://arxiv.org/pdf/1912.09913v2",
+    "published": "2019-12-20"
+  },
+  "2503.21676v2": {
+    "title": "How do language models learn facts? Dynamics, curricula and hallucinations",
+    "authors": [
+      "Nicolas Zucchet",
+      "J\u00f6rg Bornschein",
+      "Stephanie Chan",
+      "Andrew Lampinen",
+      "Razvan Pascanu",
+      "Soham De"
+    ],
+    "summary": "Large language models accumulate vast knowledge during pre-training, yet the dynamics governing this acquisition remain poorly understood. This work investigates the learning dynamics of language models on a synthetic factual recall task, uncovering three key findings: First, language models learn in three phases, exhibiting a performance plateau before acquiring precise factual knowledge. Mechanistically, this plateau coincides with the formation of attention-based circuits that support recall. Second, the training data distribution significantly impacts learning dynamics, as imbalanced distributions lead to shorter plateaus. Finally, hallucinations emerge simultaneously with knowledge, and integrating new knowledge into the model through fine-tuning is challenging, as it quickly corrupts its existing parametric memories. Our results emphasize the importance of data distribution in knowledge acquisition and suggest novel data scheduling strategies to accelerate neural network training.",
+    "pdf_url": "https://arxiv.org/pdf/2503.21676v2",
+    "published": "2025-03-27"
+  }
+}
