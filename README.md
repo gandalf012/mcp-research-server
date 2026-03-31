@@ -184,21 +184,107 @@ if __name__ == "__main__":
 
 ---
 
-## 8. Outils de développement
+## 8. Commandes pour explorer un serveur MCP
 
-### MCP Inspector
+### Lancer un serveur
 
 ```bash
-# Option 1 — stdio, tout-en-un (recommandé pour développement)
-npx @modelcontextprotocol/inspector uv --directory /path/to/project run server.py
+# Mode stdio (défaut) — pour inspector ou Claude Desktop
+uv run research_server.py
 
-# Option 2 — HTTP, deux terminaux
-# Terminal 1 : uv run research_server.py
-# Terminal 2 : npx @modelcontextprotocol/inspector
-# Dans l'UI : Transport=Streamable HTTP, URL=http://127.0.0.1:8081/mcp
+# Mode HTTP local — pour tester en remote ou inspector HTTP
+uv run research_server.py   # avec transport="http" dans run()
+
+# Via FastMCP CLI
+fastmcp run research_server.py                          # stdio
+fastmcp run research_server.py --transport http         # HTTP
 ```
 
-Permet de tester tools, resources et prompts individuellement sans passer par le chatbot.
+### Inspecter avec le MCP Inspector
+
+```bash
+# ── Option A : stdio, tout-en-un ─────────────────────────────────────────
+npx @modelcontextprotocol/inspector \
+  uv --directory /chemin/vers/mcp_project run research_server.py
+# → ouvre l'UI, le serveur est spawné automatiquement
+
+# ── Option B : HTTP, deux terminaux ──────────────────────────────────────
+# Terminal 1 — serveur
+uv run research_server.py
+
+# Terminal 2 — inspector standalone
+npx @modelcontextprotocol/inspector
+# Dans l'UI : Transport = Streamable HTTP
+#             URL      = http://127.0.0.1:8081/mcp
+
+# ── Option C : FastMCP dev mode (équivalent Option A) ────────────────────
+fastmcp dev research_server.py
+```
+
+### Explorer via curl (serveur HTTP actif)
+
+```bash
+BASE="http://127.0.0.1:8081/mcp"
+
+# Initialiser la session (obligatoire en premier)
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"curl","version":"0.1"}}}'
+
+# Lister les tools
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}'
+
+# Lister les resources
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":2,"method":"resources/list","params":{}}'
+
+# Lister les prompts
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":3,"method":"prompts/list","params":{}}'
+
+# Appeler un tool
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"search_papers","arguments":{"topic":"deep learning","max_results":3}}}'
+
+# Lire une resource
+curl -s -X POST $BASE \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":5,"method":"resources/read","params":{"uri":"papers://folders"}}'
+```
+
+### Commandes du chatbot (mcp_chatbot_v2.py)
+
+```
+@folders               → liste les topics disponibles (resource papers://folders)
+@<topic>               → affiche les papers d'un topic (resource papers://<topic>)
+/prompts               → liste tous les prompts disponibles
+/prompt <nom> <k=v>    → exécute un prompt avec des arguments
+quit / exit            → quitte le chatbot
+```
+
+### Débugger Claude Desktop
+
+```bash
+# Logs MCP en temps réel
+tail -f ~/Library/Logs/Claude/mcp-server-research.log
+tail -f ~/Library/Logs/Claude/mcp-server-filesystem.log
+tail -f ~/Library/Logs/Claude/mcp-server-fetch.log
+
+# Voir tous les logs MCP
+ls ~/Library/Logs/Claude/
+```
+
+### Installer un serveur dans Claude Desktop via FastMCP CLI
+
+```bash
+# Ajoute automatiquement l'entrée dans claude_desktop_config.json
+fastmcp install research_server.py --name research
+```
 
 ---
 
